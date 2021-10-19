@@ -18,5 +18,10 @@ else:
 		print("A equação não possui raiz!")
 	elif delta == 0:
 		x = (-b+(delta**(1/2))) / (2 * a)
-		print (delta ** (1/2))
-		print(x)
+		print("Valor de x: ",x)
+	else:
+		x1 = (-b+(delta**(1/2))) / (2 * a)
+		x2 = (-b-(delta**(1/2))) / (2 * a)
+		print("Valor de x1: ",x1)
+		print("Valor de x2: ",x2)
+		
