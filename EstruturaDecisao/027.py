@@ -35,14 +35,12 @@ else:
 print("=====Formas de Pagamento====")
 print("1-----Dinheiro\n2----- Cartão de crédito\n3-----Cartão de Débito\n4-----Cartão Tabajará")
 formaPag = ["Dinheiro", "Cartão de Cŕedito", "Cartão de Débito", "Cartão Tabajará"]
-print(formaPag[1])
 formaPagamento = int(input("Escolha a forma de pagamento: "))
-print(formaPag[formaPagamento])
 if formaPagamento == 4:
 	valorTotal *= 0.95
 
 print("=====Cupom Fiscal=====")
 print("Tipo de Carne: ",tipoCarne[escolha+1])
-#print("Quantidade de Carne: {}kg".format(quant))
-#print("Forma de Pagamento: ",formaPag[formaPagamento])
+print("Quantidade de Carne: {}kg".format(quant))
+print("Forma de Pagamento: ",formaPag[formaPagamento - 1])
 print("Valor a ser pago: R${:.2f}".format(valorTotal))
